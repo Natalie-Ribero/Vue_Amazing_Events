@@ -1,0 +1,299 @@
+/* First mobile */
+/* Normalizacion */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a p {
+    font-size: 7vw;
+}
+
+body {
+    background: rgb(11, 137, 177);
+    background: linear-gradient(90deg, rgba(11, 137, 177, 1) 0%, rgba(87, 47, 150, 1) 43%, rgba(108, 136, 235, 1) 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 2vh;
+}
+
+.claseBg {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.nav-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(11, 137, 177);
+    background: linear-gradient(90deg, rgba(11, 137, 177, 1) 0%, rgba(87, 47, 150, 1) 43%, rgba(108, 136, 235, 1) 100%);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: max-content;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow:
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(247, 0, 255, 0.993);
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    height: 25vh;
+}
+
+#contenedorCards {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+main {
+    display: flex;
+}
+
+#contenedorCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vh;
+}
+
+div form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 5vw;
+    color: white;
+}
+
+li a[href="#"] {
+    background-color: rgb(112, 6, 6) !important;
+    border: 1px solid red;
+}
+
+li a {
+    text-align: center;
+}
+
+img[src="./assets/img/logoAmazingEvents.png"] {
+    width: 50vw !important;
+    background-color: rgb(255, 255, 255);
+    opacity: .5;
+    border-radius: 7px;
+}
+
+.nav-item a {
+    border-radius: 7px;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.151);
+    margin: 1.5vw;
+}
+
+td,
+th {
+    padding: .5vw;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    color: white;
+}
+
+a img {
+    width: 5vw;
+}
+
+form[role="search"] {
+    margin-bottom: 1vh;
+}
+
+.tar {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+
+}
+
+.rrss img {
+    width: 10vw;
+    /* border-radius: 50px; */
+}
+
+.cohorte {
+    font-size: 3vh;
+}
+
+.detailsMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.details {
+    display: flex;
+    background-color: #EF5350;
+    width: 50vh;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadro2 p {
+    margin: 2px;
+}
+
+label {
+    color: white;
+}
+
+textarea,
+.name,
+.email {
+    width: 30vw;
+    border-color: blue;
+    box-shadow: -19px -16px 25px 4px rgba(0, 0, 0, 0.47);
+}
+
+#enviar {
+    width: 30vw;
+    margin-right: 2vw;
+}
+
+#contactImg {
+    height: 40vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .category {
+        display: flex;
+        gap: 2vh;
+        flex-wrap: wrap;
+    }
+
+    .labels {
+        display: flex;
+        gap: 1vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 990px) {
+
+    #navbarSupportedContent {
+        flex-grow: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 600px) {
+
+    .nav-2 a {
+        font-weight: 500;
+    }
+
+    /* Altura en paginas */
+    .headerIndex,
+    .upcomingHeader,
+    .headerPast {
+        height: max-content;
+    }
+
+    .categoryIndex,
+    .categoryUpcoming,
+    .categoryPast {
+        height: 10vh;
+    }
+
+    .mainIndex,
+    .upcomingMain,
+    .mainPast {
+        height: max-content;
+    }
+
+    img[src="./assets/img/logoAmazingEvents.png"] {
+        width: 15vw !important;
+    }
+
+    .rrss img {
+        width: 2vw;
+    }
+
+    .tableContainer {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailsMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .botonBuscar {
+        width: 30vw;
+        flex-direction: row;
+        align-content: center
+    }
+
+    .card:hover {
+        transform: translate(-10px, -10px);
+        transition: transform .5s;
+    }
+
+    label {
+        margin-right: 2vw;
+        margin-bottom: 2vh;
+    }
+
+    .buscar {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+}
